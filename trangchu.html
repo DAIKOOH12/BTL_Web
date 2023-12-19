@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="css\trangchu.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web\fontawesome-free-6.5.1-web\css\all.min.css">
+    <script src="fontawesome-free-6.5.1-web\fontawesome-free-6.5.1-web\js\all.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header--page">
+        <div class="header-banner" id="header_banner">
+            <i class="fa-solid fa-xmark" style="position: absolute;z-index: 100;right: 0;cursor: pointer;"
+                id="cross_off" onclick="turnOffBanner()"></i>
+            <img src="image\poster_header.jpg" alt="" style="width: 100%;height: 100%;">
+        </div>
+        <div class="header-text-top">
+            <div class="container">
+                <div class="text-address">
+                    <marquee style="color: white; max-width: 500px;">
+                        Hà Nội: 49 Thái Hà | 151 Lê Thanh Nghị | 63 Trần Thái Tông . HCM: 158 - 160 Lý Thường Kiệt | 330
+                        - 332 Võ Văn Tần | 84T/14 Trần Đình Xu . Bắc Ninh: Số 4 Nguyễn Văn Cừ - Ninh Xá</marquee>
+                </div>
+                <div class="text-title">
+                    <a href=""><i class="fa-solid fa-location-pin" style="color: #ffffff;"></i>
+                        <p>Hệ thống showroom</p>
+                    </a>
+                    <a href=""><i class="fa-solid fa-circle-play" style="color: #ffffff;"></i>
+                        <p>Video</p>
+                    </a>
+                    <a href=""><i class="fa-solid fa-newspaper" style="color: #ffffff;"></i>
+                        <p>Tin tức</p>
+                    </a>
+                    <a href=""><i class="fa-solid fa-print" style="color: #ffffff;"></i>
+                        <p>Tra cứu bảo hành</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-main-container">
+            <div class="header-container">
+                <div class="header-main">
+                    <a href=""><img src="image\logo_Logo-AP-noel - 2023.png" alt="" style="height: 60px;"></a>
+                    <div class="header-search">
+                        <select name="scat_id" id="" style="height: 35px;border: none;">
+                            <option value="" selected>Danh mục sản phẩm</option>
+                            <option value="">Laptop - Tablet - Mobile</option>
+                            <option value="">Máy tính - Máy chủ</option>
+                            <option value="">Máy tính All-in-one</option>
+                            <option value="">PCAP Máy tính An Phát</option>
+                            <option value="">Apple</option>
+                            <option value="">Máy in - TB Văn Phòng</option>
+                            <option value="">Linh kiện máy tính</option>
+                            <option value="">Màn Hình Máy Tính</option>
+                            <option value="">Gaming Gear</option>
+                        </select>
+                        <div class="search-form" style="height: 100%;width: 100%;display: flex;align-items: center;">
+                            <input type="text" name="find" id="" placeholder="Tìm kiếm sản phẩm"
+                                style="height: 33px;border: none;width: 100%;">
+                            <button type="submit" style="border:none;height: 35px;width: 150px;"><i
+                                    class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</button>
+                        </div>
+                    </div>
+                    <div class="header-icon-right">
+                        <div class="icon icon-phone"
+                            style="height: 100%;display: flex;align-items: center;justify-content: center;">
+                            <a href="" style="margin-right: 5px;"><i class="fa-solid fa-square-phone fa-xl"></i></a>
+                            <div class="phone-contact-text">
+                                <b>1900 0323</b></br>
+                                <b>0862136 488</b></br>
+                                <b>0931 105 498</b>
+                            </div>
+                        </div>
+                        <div class="icon icon-pc"
+                            style="height: 100%;display: flex;align-items: center;justify-content: center;">
+                            <a href="" style="margin-right: 5px;"><i class="fa-solid fa-computer fa-xl"></i></a>
+                            <div class="phone-contact-text">
+                                <p style="width: 90px;">Xây dựng Cấu hình PC</p>
+                            </div>
+                        </div>
+                        <div class="icon icon-account"
+                            style="height: 100%;display: flex;align-items: center;justify-content: center;">
+                            <a href="" style="margin-right: 5px;"><i class="fa-regular fa-user fa-xl"></i></a>
+                            <div class="phone-contact-text">
+                                <p style="margin: 0;">Đăng kí</p>
+                                <p style="margin: 0;">Đăng nhập</p>
+                            </div>
+                        </div>
+                        <div class="icon icon-cart"
+                            style="height: 100%;display: flex;align-items: center;justify-content: center;">
+                            <a href="" style="margin-right: 5px;"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-list" id="header_list" style="display: flex;">
+                    <div class="menu-product" style="margin: auto 30px;">
+                        <div id="header-menu-title" style="color:white;"><i class="fa-solid fa-bars"
+                                style="margin-right: 10px;"></i>DANH MỤC SẢN PHẨM</div>
+                        <ul id="list-menu-item">
+                            <li><i class="fa-solid fa-laptop" style="margin-right: 10px;"></i>Laptop - Tablet - Moblie
+                            </li>
+                            <li><i class="fa-solid fa-computer" style="margin-right: 10px;"></i>Máy tính - Máy chủ</li>
+                            <li><img src="image\all_in_one_pc.jpg" alt="" style="margin-right: 10px;width: 20px;">Máy
+                                tính
+                                All-in-one</li>
+                            <li><img src="image\pcap_pc.jpg" alt="" style="margin-right: 10px;width: 20px;">PCAP Máy
+                                tính An
+                                Phát</li>
+                            <li><i class="fa-brands fa-apple fa-xl" style="margin-right: 10px"></i>Apple</li>
+                            <li><i class="fa-solid fa-print" style="margin-right: 10px"></i>Máy in - TB Văn Phòng</li>
+                            <li><img src="image\accessory_pc.png" alt="" style="margin-right: 10px;width: 20px;">Linh
+                                Kiện
+                                Máy tính</li>
+                            <li><i class="fa-solid fa-desktop" style="margin-right: 10px"></i>Màn Hình Máy Tính</li>
+                            <li><img src="image\console_icon.jpg" alt="" style="margin-right: 10px;width: 20px;">Gaming
+                                Gear
+                            </li>
+                            <li><img src="image\usb_icon.jpg" alt="" style="margin-right: 10px;width: 20px;">Thiết bị
+                                lưu
+                                trữ, USB, thẻ nhớ</li>
+                            <li><img src="image\camera_icon.jpg" alt="" style="margin-right: 10px;width: 20px;">Camera
+                            </li>
+                            <li><img src="image\cooling_icon.png" alt="" style="margin-right: 10px;width: 20px;">Cooling
+                                -
+                                Tản nhiệt</li>
+                            <li><i class="fa-brands fa-usb" style="margin-right: 10px"></i>Phụ Kiện Laptop, PC, Khác
+                            </li>
+                            <li><img src="image\smart_home_icon.png" alt="" sizes="" srcset=""
+                                    style="margin-right: 10px;width: 20px;">Xe Đạp Điện, Smart Home</li>
+                            <li><i class="fa-solid fa-network-wired" style="margin-right: 10px"></i>Thiết bị mạng</li>
+                            <li><img src="image\speaker_icon.png" alt="" style="margin-right: 10px;width: 20px;">Loa,
+                                Tai
+                                Nghe, Webcam, Tivi</li>
+                            <li><img src="image\buồng_chơi_game.jpg" alt=""
+                                    style="margin-right: 10px;width: 20px;">Buồng
+                                Chơi Game Giả Lập</li>
+                        </ul>
+                    </div>
+                    <div class="menu-text-right">
+                        <a href="">
+                            <div class="text-right-items watched-item" style="color: white;">
+                                <i class="fa-solid fa-check"></i>Sản phẩm bạn đã xem
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="text-right-items flash-sale" style="color: white;">
+                                <img src="image\flash_sale_icon.png" alt="">Flash Sale
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="text-right-items flash-sale" style="color: white;">
+                                <img src="image\custom_care.png" alt="">Chăm sóc khách hàng
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="text-right-items flash-sale" style="color: white;">
+                                <img src="image\free_transport_icon.png" alt="">Miễn phí vận chuyển
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main--page">
+        <div class="body-page">
+            <div class="body-page-banner" style="width: 1050px;display: flex;justify-content: center;flex-wrap: wrap;">
+                <div class="banner-top">
+                    <div class="scroll-list-images">
+                        <img src="image\ảnh_chính.jpg" alt="" style="height: 100%;">
+                    </div>
+                    <div class="banner-col">
+                        <img src="image\combo_iamge.jpg" alt="">
+                        <img src="image\29_Nov84e8d956fabbdc7f6b35e599e8e7bbaf.jpg" alt="">
+                    </div>
+                </div>
+                <div class="banner-bottom">
+                    <a href=""><img src="image\noel_banner1.png" alt=""></a>
+                    <a href=""><img src="image\noel_banner2.png" alt=""></a>
+                    <a href=""><img src="image\noel_banner3.png" alt=""></a>
+                </div>
+            </div>
+            <div class="body-items">
+                <div class="body-items-all items-best-seller">
+                    <div class="body-items-title">
+                        <h4 style="padding: 0 10px;color: white;background-color: #546ce8;margin: 0;padding: 15px;">TOP
+                            SẢN PHẨM BÁN CHẠY</h4>
+                        <div class="child-title">
+                            <a href="">PC GAMING</a>
+                            <a href="" style="border-left: 1px solid black;">LAPTAP GAMING</a>
+                            <a href="" style="border-left: 1px solid black;">MACBOOK APPLE</a>
+                            <a href="" style="border-left: 1px solid black;">MÁY IN CANON</a>
+                            <a href="" style="border-left: 1px solid black;border-right: 1px solid black;">MÀN HÌNH MÁY
+                                TÍNH</a>
+                            <a href="">MÀN HÌNH GAMING</a>
+                        </div>
+                    </div>
+                    <div class="body-items-details details-seller">
+                        <div class="best-seller-top">
+                            <div class="detail-item">
+                                <img src="image\best_sell_item12.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBDE0861</p>
+                                <a href="">
+                                    <h3>Laptop Dell Vostro 3430 71011900 (Intel Core i5-1335U | 8GB | 512GB | Intel Iris
+                                        Xe | 14 inch FHD | Win 11 | Office)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">18.990.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">16.290.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item11.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBAS1264</p>
+                                <a href="">
+                                    <h3>Laptop ASUS TUF Gaming F15 FX506HF HN014W (Intel Core i5-11400H | 8GB | 512GB |
+                                        RTX 2050 4GB | 15.6 inch FHD | Win 11 | Đen)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">21.990.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">16.490.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item10.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBHP0835</p>
+                                <a href="">
+                                    <h3>Laptop HP 14S-dq5100TU 7C0Q0PA (Core i5-1235U | 8GB | 256GB | Intel Iris Xe | 14
+                                        inch FHD | Win 11 | Bạc)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">17.690.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">13.490.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item8.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBMS0374</p>
+                                <a href="">
+                                    <h3>Laptop MSI Thin GF63 12UCX-841VN (Intel Core i5-12450H | 8GB | 512GB | RTX 2050
+                                        Max Q | 15.6 inch FHD 144Hz | Win 11 | Đen)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">17.990.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">15.990.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">2 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item7.jpg" alt="" style="height: 150px;">
+                                <p>Mã SP: NBLN0771</p>
+                                <a href="">
+                                    <h3>Laptop Lenovo IdeaPad Slim 5 16IAH8 83BG004EVN (Intel Core i5-12450H | 16GB |
+                                        1TB | Intel UHD | 16 inch WUXGA | Win 11 | Xám)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">17.490.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">15.990.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href=""></a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item6.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBGI0036</p>
+                                <a href="">
+                                    <h3>Laptop Gigabyte G5 MF-F2VN313SH (Intel Core i5-12450H | 16GB | 512GB | RTX 4050
+                                        6GB | 15.6 inch FHD | Win 11 | Đen)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">24.990.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">20.990.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best-seller-bottom">
+                            <div class="detail-item">
+                                <img src="image\best_sell_item5.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBLN0769</p>
+                                <a href="">
+                                    <h3>Laptop Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN (AMD Ryzen 5 5500H | 8GB |
+                                        512GB | RTX 2050 | 15.6 inch FHD | Win 11 | Đen)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">17.990.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">14.490.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item4.png" alt="" style="height: 150px;">
+                                <p>Mã SP: PCAPT0050</p>
+                                <a href="">
+                                    <h3>PCAP MSI GAMING RED DRAGON 1 ( i3-13100F | 16GB DDR4 | GTX 1650 | 480GB | 500W)
+                                        - Cấu hình MSI Build PC sẵn dành cho Fan Rồng Đỏ
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">13.790.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">11.999.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item3.jpg" alt="" style="height: 150px;">
+                                <p>Mã SP: MOSS0165</p>
+                                <a href="">
+                                    <h3>Màn hình cong SAMSUNG LS27C360EAEXXV (27.0 inch - FHD - VA - 75Hz - 4ms -
+                                        FreeSync)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">3.889.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">2.979.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item2.png" alt="" style="height: 150px;">
+                                <p>Mã SP: MIHP0137</p>
+                                <a href="">
+                                    <h3>Máy in Laser đen trắng HP 107w 4ZB78A (In, A4, USB, WIFI)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">3.499.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">2.389.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item1.png" alt="" style="height: 150px;">
+                                <p>Mã SP: AIHP0336</p>
+                                <a href="">
+                                    <h3>Máy tính để bàn HP Eliteone 840 23.8 inch G9 AiO 76N48PA (Intel Core i5-12500 |
+                                        8GB | 256GB | Intel UHD | Win 11 | Bạc)
+                                    </h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">25.990.000
+                                            đ
+                                        </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;">21.990.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <img src="image\best_sell_item9.png" alt="" style="height: 150px;">
+                                <p>Mã SP: NBLN0710</p>
+                                <a href="">
+                                    <h3>Laptop Lenovo Ideapad 5 Pro 16ARH7 82SN00AYVN (Ryzen 5 6600HS | 16GB | 512GB |
+                                        RTX 3050 4GB | 16 inch 2.5K | Win 11 | Xám)</h3>
+                                </a>
+                                <div class="price-item">
+                                    <div class="">
+                                        <del
+                                            style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">
+                                            27.990.000 đ </del><br>
+                                        <span style="font-weight: bolder;font-size: 20px;color: red;"> 21.990.000 đ
+                                        </span>
+                                    </div>
+                                    <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                        alt="" style="height: 40px;">
+                                </div>
+                                <p><a href="">1 khuyến mại</a></p>
+                                <div class="buying-item">
+                                    <a href=""><i class="fa-solid fa-cart-shopping fa-xl"
+                                            style="color: #546ce8;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-items-showall showall-best">
+                        <a href="" style="margin: 0;border:1px solid #546ce8;">
+                            XEM TẤT CẢ SẢN PHẨM
+                        </a>
+                    </div>
+                </div>
+                <div class="body-items-all items-LTM">
+                    <div class="body-items-title">
+                        <h4 style="padding: 0 10px;color: white;background-color: #546ce8;margin: 0;padding: 15px;">
+                            LAPTOP -
+                            TABLET - MOBILE</h4>
+                        <div class="child-title">
+                            <a href="">LAPTOP ASUS</a>
+                            <a href="" style="border-left: 1px solid black;border-right: 1px solid black;">LAPTOP
+                                ASUS</a>
+                            <a href="">LAPTOP ASUS</a>
+                        </div>
+                    </div>
+                    <div class="body-items-details details-non-best">
+                        <div class="detail-item">
+                            <img src="image\LTM1.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBDE0873</p>
+                            <a href="">
+                                <h3>Laptop Dell Latitude 3420 L3420I5SSDF512B (Intel Core i5-1135G7 | 8GB | 512GB | Intel Iris Xe | 14 inch FHD | Ubuntu | Đen)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">18.990.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">16.290.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM2.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBDE0846</p>
+                            <a href="">
+                                <h3>Laptop Dell Inspiron 14 7430 i7U165W11SLU (Core i7 1355U | 16GB | 512GB | Intel Iris Xe | 14 inch FHD+ | Windows 11 Home | Bạc)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">29.990.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">27.790.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM3.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBLN0759</p>
+                            <a href="">
+                                <h3>Laptop Lenovo LOQ 15IRH8 82XV00QPVN (Intel Core i5-12450H | 16GB | 512GB | RTX 2050 | 15.6 inch FHD | Win 11 | Xám)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">21.999.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">18.990.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM4.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBAS1312</p>
+                            <a href="">
+                                <h3>Laptop Asus Vivobook 16 X1605VA-MB105W (Intel Core i5-1335U | 8GB | 512GB | Intel UHD Graphics | 16-inch WUXGA | Win 11| Bạc)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">18.190.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">14.890.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM5.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBLN0769</p>
+                            <a href="">
+                                <h3>Laptop Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN (AMD Ryzen 5 5500H | 8GB | 512GB | RTX 2050 | 15.6 inch FHD | Win 11 | Đen)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">17.990.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">14.490.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM6.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBAP0117</p>
+                            <a href="">
+                                <h3>Laptop Apple MacBook Pro 13.3 inch M2 2022 8GB 256GB - Chính Hãng Apple Việt Nam
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">33.000.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">29.390.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-items-showall">
+                        <a href="" style="color:#546ce8;margin: 0;width: 100%;padding: 0;justify-content: center;">
+                            <em>XEM TẤT CẢ</em><i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="body-items-all items-PC-server">
+                    <div class="body-items-title">
+                        <h4 style="padding: 0 10px;color: white;background-color: #546ce8;margin: 0;padding: 15px;">
+                            MÁY TÍNH - MÁY CHỦ</h4>
+                        <div class="child-title">
+                            <a href="">MÁY TÍNH ĐỒNG BỘ</a>
+                            <a href="" style="border-left: 1px solid black;border-right: 1px solid black;">NÁY TÍNH VĂN PHÒNG</a>
+                            <a href="">INTEL NUC</a>
+                        </div>
+                    </div>
+                    <div class="body-items-details details-non-best">
+                        <div class="detail-item">
+                            <img src="image\LTM1.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBDE0873</p>
+                            <a href="">
+                                <h3>Laptop Dell Latitude 3420 L3420I5SSDF512B (Intel Core i5-1135G7 | 8GB | 512GB | Intel Iris Xe | 14 inch FHD | Ubuntu | Đen)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">18.990.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">16.290.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM2.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBDE0846</p>
+                            <a href="">
+                                <h3>Laptop Dell Inspiron 14 7430 i7U165W11SLU (Core i7 1355U | 16GB | 512GB | Intel Iris Xe | 14 inch FHD+ | Windows 11 Home | Bạc)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">29.990.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">27.790.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM3.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBLN0759</p>
+                            <a href="">
+                                <h3>Laptop Lenovo LOQ 15IRH8 82XV00QPVN (Intel Core i5-12450H | 16GB | 512GB | RTX 2050 | 15.6 inch FHD | Win 11 | Xám)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">21.999.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">18.990.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM4.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBAS1312</p>
+                            <a href="">
+                                <h3>Laptop Asus Vivobook 16 X1605VA-MB105W (Intel Core i5-1335U | 8GB | 512GB | Intel UHD Graphics | 16-inch WUXGA | Win 11| Bạc)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">18.190.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">14.890.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM5.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBLN0769</p>
+                            <a href="">
+                                <h3>Laptop Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN (AMD Ryzen 5 5500H | 8GB | 512GB | RTX 2050 | 15.6 inch FHD | Win 11 | Đen)
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">17.990.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">14.490.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <img src="image\LTM6.jpg" alt="" style="height: 223px;">
+                            <p>Mã SP: NBAP0117</p>
+                            <a href="">
+                                <h3>Laptop Apple MacBook Pro 13.3 inch M2 2022 8GB 256GB - Chính Hãng Apple Việt Nam
+                                </h3>
+                            </a>
+                            <div class="price-item">
+                                <div class="">
+                                    <del style="font-weight: bolder;font-size: 15px;color: rgba(61, 61, 61, 0.689);">33.000.000 đ
+                                    </del><br>
+                                    <span style="font-weight: bolder;font-size: 20px;color: red;">29.390.000 đ
+                                    </span>
+                                </div>
+                                <img src="image\pngtree-price-tag-with-the-discount-icon-vector-png-image_6686659.png"
+                                    alt="" style="height: 40px;">
+                            </div>
+                            <p><a href="">1 khuyến mại</a></p>
+                            <div class="buying-item">
+                                <a href=""><i class="fa-solid fa-cart-shopping fa-xl" style="color: #546ce8;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-items-showall">
+                        <a href="" style="color:#546ce8;margin: 0;width: 100%;padding: 0;justify-content: center;">
+                            <em>XEM TẤT CẢ</em><i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer--page">
+
+    </div>
+</body>
+<script src="js\trangchu.js "></script>
+
+</html>
