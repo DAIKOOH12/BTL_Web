@@ -289,3 +289,58 @@ a * {
 .details-non-best{
     justify-content: start;
 }
+.items-banner-long{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.items-banner-long img{
+    width: 50%;
+}
+
+.footer-top{
+    background-color: #6610f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer-top *{
+    color: white;
+}
+.footer-top>.container-bottom>.item *{
+    font-size: 20px;
+    padding: 0;
+    margin: 3px 5px 0 0;
+}
+.footer-top>.container-bottom>.item p{
+    font-size: 12px;
+}
+.icon-connection{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-top>.container-bottom>.item a:hover{
+    padding-bottom: 5px;
+}
+.container-bottom{
+    display: flex;
+}
+.container-bottom *{
+    max-width: 400px;
+    padding-right: 60px;
+}
+.icon-payment{
+    height: 40px;
+    width: 360px;
+}
+.input-info{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.input-info>*{
+    margin: 0;
+    
+}
