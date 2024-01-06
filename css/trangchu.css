@@ -69,7 +69,9 @@ a * {
     display: flex;
     margin-bottom: 10px;
 }
-
+.text-title>a p{
+    font-size: 13px;
+}
 .header-search {
     display: flex;
     width: 50%;
@@ -300,7 +302,7 @@ a * {
 
 .footer-top{
     background-color: #6610f2;
-    padding: 20px;
+    padding: 30px 10px;
     display: flex;
     justify-content: center;
 }
@@ -310,7 +312,7 @@ a * {
 .footer-top>.container-bottom>.item *{
     font-size: 20px;
     padding: 0;
-    margin: 3px 5px 0 0;
+    margin: 3px 10px 0 0;
 }
 .footer-top>.container-bottom>.item p{
     font-size: 12px;
@@ -343,4 +345,58 @@ a * {
 .input-info>*{
     margin: 0;
     
+}
+.footer-news{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+.news-left,.news-right{
+    max-width: 45%;
+}
+.news-title{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.153);
+}
+.news-details{
+    width: 100%;
+}
+.news-details-items{
+    display: flex;
+    margin: 10px 0;
+}
+.news-details-items img{
+    min-width: 200px;
+    max-height: 110px;
+}
+.news-details-items>.items-text p{
+    font-size: small;
+}
+.items-text{
+    width: 100%;
+    padding: 10px;
+}
+.footer-advantage{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: center;
+}
+.advantage-items{
+    display: flex;
+    align-items: center;
+}
+.advantage-items i{
+    color: white;
+}
+.advantage-items .text{
+    margin-right: 10px;
+}
+.advantage-items>.text *{
+    margin: 5px 20px;
+}
+.text b{
+    font-size: 15px;
+}
+.text p{
+    font-size: 12px;
 }
